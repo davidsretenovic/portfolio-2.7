@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<header class="name navbar-brand">
-					<a href="#">David Sretenovic</a>
+					<a href="#">DS</a>
 				</header><!-- end name -->
 			</div><!-- end navbar-header -->
 			<div class="navbar-collapse collapse">
@@ -50,11 +50,11 @@
 		<div class="hero" id="main-hero">
 
 			<div class="hero-content">
-				<h1 class="hero-title">This is a hero title</h1>
+				<h1 class="hero-title">This is David's website</h1>
 				<p>The best and brightest website ever.</p>
 
-				<a href="#">Learn More</a>
-				<a href="#">Sign up</a>
+				<a href="#intro">Learn More</a>
+				<a href="#contact">Ask Me</a>
 
 			</div>
 
@@ -66,49 +66,59 @@
 			<div class="site-section-inside">
 				<div class="section-header">
 					<h2>Key Features</h2>
-				</div>
+				</div><!-- end section-header -->
 
-				<div class="feature-box">
-					<img src="img/star.png" alt="Easy to Use">
-					<h5>Easy to use</h5>
-					<p>So easy a toddler can use it</p>
-					<br>
-					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Easy to Use">See how easy &raquo;</button>
-				</div>
+				<div class="row row-grid" id="feature-row">
 
-				<div class="feature-box">
-					<img src="img/like.png" alt="Fun to Use">
-					<h5>Fun to use</h5>
-					<p>As fun as a bouncy house!</p>
-					<br>
-					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Fun to Use">See how fun &raquo;</button>
-				</div>
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box" id="feature1">
+						<img src="img/star.png" alt="Easy to Use">
+						<h5>Easy to use</h5>
+						<p>So easy a toddler can use it</p>
+						<br>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Easy to Use">See how easy &raquo;</button>
 
-				<div class="feature-box">
-					<img src="img/heart.png" alt="You'll love it">
-					<h5>You'll love it</h5>
-					<p>The best thing since sliced bread!</p>
-					<br>
-					<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="You'll love it">Much love &raquo;</button>
-				</div>
-			</div>
+					</div><!-- end feature1 -->
+
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box" id="feature2">
+						<img src="img/like.png" alt="Fun to Use">
+						<h5>Fun to use</h5>
+						<p>As fun as a bouncy house!</p>
+						<br>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Fun to Use">See how fun &raquo;</button>
+
+					</div><!-- end feature2 -->
+
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box" id="feature3">
+						<img src="img/heart.png" alt="You'll love it">
+						<h5>You'll love it</h5>
+						<p>The best thing since sliced bread!</p>
+						<br>
+						<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="You'll love it">Much love &raquo;</button>
+
+					</div><!-- end feature3 -->
+				
+				</div><!-- end feature-row -->
+
+			</div><!-- end site-section-inside -->
+
 		</section>
 		
 		<!-- about -->
 		
-		<div class="hero hero-about" id="about" data-stellar-background-ratio="0.5">
+		<section class="hero hero-about" id="about" data-stellar-background-ratio="0.3">
 			<div class="hero-content">
 				<h1 class="hero-title">About David</h1>
 				<p>The greatest web dev ever.</p>
 				
-				<div class="row">
+				<div class="row row-grid">
 					<!-- <h2 class="learn-more">Learn More</h2> -->
 					<div class="modal-button">
 						<!-- Small modal button -->
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="btn-learn-more">
 							<h2 class="learn-more">Learn More</h5>
 						</button>
-					</div> <!-- end modal-button -->
+					</div><!-- end modal-button -->
+
 					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby-"myLargeModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
@@ -119,15 +129,19 @@
 								<div class="modal-body">
 									Resume example text, should be removed
 									<embed id="modalembed" src="./docs/Rob.Pucci.SysAdmin.2012.pdf"></embed>
-								</div>
-							</div> <!-- end modal content -->
-						</div> <!-- end modal-dialog-modal-sm -->
-					</div> <!-- end modal fade -->
+								</div><!-- end modal-body -->
+
+							</div><!-- end modal content -->
+
+						</div><!-- end modal-dialog-modal-sm -->
+
+					</div><!-- end modal fade -->
 
 				</div><!-- end row -->
 
-			</div>
-		</div>
+			</div><!-- end hero-content -->
+
+		</section><!-- end about -->
 
 		<section class="site-section" id="portfolio">
 			<div class="site-section-inside">
@@ -135,38 +149,49 @@
 					<h2> Portfolio </h2>
 				</div> <!-- end section header -->
 
-				<div class="feature-box">
-					<h5>Parallax</h5>
-					<p>Uses 'stellar.js' for parallax effects</p>
-				</div><!-- end feature-box -->
+				<div class="row row-grid" id="porfolio-row-1">
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<h5>Parallax</h5>
+						<p>Uses 'stellar.js' for parallax effects</p>
+					</div>
 
-				<div class="feature-box">
-					<h5>Scrollspy</h5>
-					<p>Still to be re-implemented!</p>
-				</div><!-- end feature-box -->
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<h5>Scrollspy</h5>
+						<p>Still to be re-implemented!</p>
+					</div>
 
-				<div class="feature-box">
-					<h5>Social Media</h5>
-					<p>Still to be re-implemented!</p>
-				</div> <!-- end feature-box -->
-			</div> <!-- end site-section-inside -->
-			<br>
-			<div class="site-section-inside">
-				<div class="feature-box">
-					<a href="#" title="Tooltip" id="tt-01">
-						<h5>Tooltips</h5>
-					</a>
-					<p>This tooltip covers the header</p>
-				</div><!-- end feature-box -->
-
-				<div class="feature-box">
-					<a href="#" title="JavaScript">
-						<h5>JavaScript</h5>
-					</a>
-					<p>Uses a 'scripts.js' file</p>
-				</div><!-- end feature-box -->
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<h5>Social Media</h5>
+						<p>Still to be re-implemented!</p>
+					</div>
 				
+				</div><!-- end portfolio-row-1 -->
+
+				<div class="row row-grid" id="porfolio-row-2">
+
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<a href="#" title="Tooltip" id="tt-01">
+							<h5>Tooltips</h5>
+						</a>
+						<p>This tooltip covers the header</p>
+					</div>
+
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<a href="#" title="JavaScript">
+							<h5>JavaScript</h5>
+						</a>
+						<p>Uses a 'scripts.js' file</p>
+					</div>
+
+					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
+						<h5>Conditional Statements</h5>
+						<p>Still to be implemented!</p>
+					</div>
+				
+				</div><!-- end portfolio-row-2 -->
+
 			</div><!-- end site-section-inside -->
+			
 		</section> <!-- end about section -->
 
 		<!-- testimonials -->
