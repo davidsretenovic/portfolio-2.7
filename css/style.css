@@ -241,24 +241,28 @@ header #logo img {
 }
 
 #work-example-box {
-	height: 500px;
 	background: #efefef;
 	max-height: 90% !important;
 }
 
 #work-example-left {
-	background-color: lightpink;
-	height: 100%;
+	/* background-color: #999; */
+}
+
+#work-example-left img {
+	height: 500px;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 #work-example-right {
   text-align: center;
-	padding-top: 10%;
+	padding-top: 5%;
 	/* margin-bottom: 15px; */
 	font-size: 20px;
 	color: #999;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 2px;
 }
 
